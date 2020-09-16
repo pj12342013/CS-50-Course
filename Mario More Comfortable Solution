@@ -1,0 +1,39 @@
+#include <cs50.h>
+#include <stdio.h>
+void print(char c, int n);
+
+int main(void)
+
+{
+    int n;  
+    do 
+    {
+        n = get_int("Height:\n");
+    }
+    while (n <= 0 || n >= 9);
+
+    for (int a = 0; a < n; a++)
+        { 
+            print(' ', n - 1 - a);
+            print('#', a + 1);
+            print(' ', 2);
+            print('#', a + 1);
+        
+            printf("\n"); 
+        }
+}
+
+// defining print function
+
+    
+void print(char c, int n)
+    { 
+        for (int a = 0; a < n; a++)
+        {
+            printf("%c", c); 
+        }
+    }
+          
+
+
+
