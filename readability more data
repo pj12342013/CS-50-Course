@@ -6,7 +6,7 @@
 
 int main(void)
 
-{   // Prompt for user input string
+{   // Prompt user for input text
     string text = get_string("Text:\n");
 
     //find out number of words, sentences, letters in a text
@@ -16,7 +16,7 @@ int main(void)
 
     int words = 0;
 
-    // Letters count, accurate
+    // Counting the number of letters
     for (int i = 0; text[i]!='\0'; i++ )
 
             if (isalpha( (unsigned char) text [i] ) )
@@ -24,7 +24,7 @@ int main(void)
                 letters++;
              }
 
-    // Sentences Count,accurate
+    // Counting the number of sentences 
     for (int j = 0; j < strlen (text); j++ )
 
             if (text[j] == '!' || text[j] == '?' || text[j] == '.')
@@ -32,7 +32,7 @@ int main(void)
                 sentences++;
             }
 
-    // words count. Accuracy = Less 1 than actual. Fixed in next line
+    // Counting the number of words
    for (int k = 0; text[k]!='\0'; k++ )
 
             if (isblank( (unsigned char) text [k] ) )
@@ -42,7 +42,7 @@ int main(void)
 
     //fixing word count to account for last full stop.
     words = words + 1;
-
+    //calculating Coleman-Liau Index
     float a = letters * 100.00 / words;
 
     float b = sentences * 100.00 / words;
@@ -50,7 +50,7 @@ int main(void)
     float index = 0.0588 * a - 0.296 * b - 15.8;
 
     int clindex = round(index);
-
+    //output text
     if (clindex >= 16 )
     {
         printf("Number of letters:%i\nNumber of Words:%i\nNumber of Sentences:%i\nColeman-Liau Index:%.2f\nResult: Grade 16+\n", letters, words, sentences, index);
