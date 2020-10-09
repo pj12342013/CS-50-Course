@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define BUFFER_SIZE 512
+
+int main(int argc, char *argv[])
+{
+
+    //command line argument check
+    if(argc != 2)
+    {
+        printf("./recover filename.type\n");
+        return 1;
+    }
+    //open card.raw
+    FILE* file = fopen(argv[1], "r");
+    if(file == NULL)
+    {
+        printf("Cannot read file\n");
+        return 1;
+    }
+
+    unsigned char buffer[BUFFER_SIZE];
+
+    int filecount = 0;
+
+    FILE* picture = NULL;
+
+    int jpg_found = 0;
+
+    while(fread(buffer, BUFFER_SIZE, 1, file) == 1)
+    {
+        if(buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && buffer[3] & 0xf0)
+        {
+            if(jpg_found == 1)
+            {
+                fclose(picture);
+            }
+
+            else
+            {
+                jpg_found = 1;
+            }
+
+            char filename[8];
+            sprintf(filename, "%03i.jpg", filecount);
+            picture = fopen(filename, "a");
+            filecount++;
+        }
+
+        if(jpg_found == 1)
+        {
+            fwrite(&buffer, BUFFER_SIZE, 1, picture);
+        }
+    }
+
+    fclose(file);
+    fclose(picture);
+
+    return 0;
+
+}
+
+
+
+
+
