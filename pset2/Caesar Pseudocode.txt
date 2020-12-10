@@ -1,0 +1,25 @@
+Get Key
+Prompt the user to type plain text
+Encypher plain text
+Print out cipher text
+eg. Key 1: All plain text shifted by 1 alphabet. z==a, a==b
+
+
+./caesar 2
+plaintext: HELLO
+Cyphertext: JGNNQ
+
+Use atoi function
+//convert a string into a number
+stdlib.h
+
+isalpha
+isupper
+islower
+
+Ci = (Pi + k) % 26
+
+convert ASCII to alphabetical index
+shift alphabetic index using formula
+convert result back to ASCII
+(Preserving the case)

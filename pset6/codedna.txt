@@ -1,0 +1,4 @@
+1. Read both files
+2. Check header of database file for dna
+3. seperate each element of list.
+4. compare each header with

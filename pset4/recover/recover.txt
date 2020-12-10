@@ -1,0 +1,12 @@
+argc argv 
+if statement for proper command line argument 
+declarations char buffer with array of buffer size.. file = picture, input.. Int filecount, jpeg_found
+While statement = fread to go though all blocks until there are none left 
+    if statement if file is jpeg 
+        if jpeg found start close the pic 
+        else jpeg found time to write 
+        write to file with filename char
+    if jpeg found, write 512 bytes into file picture
+close picture and input files 
+return 0 
+        

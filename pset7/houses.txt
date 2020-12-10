@@ -1,0 +1,10 @@
+Check length of arguments
+open file with reader
+put name, house and year in an argument
+Seperating each element of name: 
+if len(name) == 2
+    first = curr_row[0] 
+    last 
+    
+else if 
+Writing into Db file 

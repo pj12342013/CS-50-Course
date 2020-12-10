@@ -1,0 +1,58 @@
+ #text{
+            text-align: center;
+            color: #3cfa07;
+            font-size: 20px;
+            font-family: Georgia;
+        }
+        .abt{
+         text-align: center;
+         color: #249903;
+         font-size: 30px bold;
+
+        }
+        #mainpg{
+        background-image: url(profile2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        #scl{
+            color: white;
+            text-align: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+          #show{
+            color: black;
+            text-align: left;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mma{
+
+            background-image: url(ufc1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: white;
+
+        }
+
+         .music{
+
+            background-image: url(music.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            color: #04b2d1;
+
+        }
+
+
+
+
+
+
+

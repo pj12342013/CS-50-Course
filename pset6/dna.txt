@@ -1,0 +1,23 @@
+#TCAG elements
+# Short Tandem Repeats = Repeat in DNA sequence
+#Partciular person has different times STR
+# matching STR counts can be used to identify
+# repeat consecutively
+
+Open a csv file and read contents
+for each str find out longest run of consecutive repeats in the dna sequence
+compare str to each csv row
+
+1. Python has csv module - reader and DictReader
+2. Add sys.arg from sys
+3. open(filename)
+    filename.read()
+4. check every sequences to check
+5. len(s) to be used
+6. s[i:j] from character I to character j
+7. int(x) turns string x to int 
+
+
+
+
+

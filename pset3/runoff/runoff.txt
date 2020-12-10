@@ -1,0 +1,13 @@
+Rules
+
+Voters can rank 3 candidates
+if candidates has 50% first rank preferences = win
+
+if no 50% first = instant run off =
+    - Lowest voted candidate eliminated
+    - Removed candidate first rank ballots now consider second rank candidate chosen
+
+Corner Cases -
+
+Cnadidates tied to be elimited all are eliminated
+If all remaining have tied - Election tied

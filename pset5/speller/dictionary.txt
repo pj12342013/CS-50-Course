@@ -1,0 +1,51 @@
+1. Load - Loading all the words in dictionary in has table
+2. Hash - Take a word and run a hash fucntion on it
+3. Size - Reutrn how man words are in your dictionary
+4. Check - chekc whether its in dictionary or not
+5. Unload - Free memory
+
+Load function:
+1. Load function:
+
+    bool load(const char* dictionary)
+    {
+
+
+    true - succcessfully return all data
+    false - Not enough memory, or couldnt do task
+
+2. Array of linked lists - Hash table
+    Hash function - Assign a number to every inpu t
+    Learn about syntex for hash table
+
+    //reallocating memory
+    Allocate memory for new node. node *n = realloc(sizeof(node));
+
+
+    //adding words to linked list
+    strcpy(n->word, "Hello")
+    n->next = NULL
+
+1.Load function:
+    a. Open up dictionary file -
+    b. Read strings from the file
+    c. Create a new node for each word
+    d. Hash word to obtain a hash value - Learn hash fucntion - Which linked lists to be used
+    e. Insert node into hash table at that location -
+
+
+    Done - fopen to open up dictionary
+    Done - Check for null value.
+    fscanf(file, "%s", word) - word - character array in memory
+    fscanf will return EOF when done with the file
+    Keep repeating until fscanf returns EOF - Loop -
+
+    New node - Use malloc to store a node,
+    Check for null
+    Copy word into that node using strcpy function
+
+    Use hash fucntion - Defined in dictionary.c
+    Index into hash table the new node, maintain pointers
+    Set new node's pointer to point to old start and then link list to new node. (THIS Process for every word in dictionary)
+
+

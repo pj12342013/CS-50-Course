@@ -1,0 +1,52 @@
+1. Get Key
+2. Validate Key
+3. Enter Plain Text
+4. Encrypt
+5. Print Cipher Text
+
+1. Get Key
+    int main(int argc, string atgv[])
+    {
+        //code here
+    }
+
+2. Validate Key: check_valid_key
+
+    1. Check key length
+    2. check for non-alphabetic characters
+    3. check for repeated characters(case sensitive)
+
+3. Plaintext: - Done
+    1. Get String - Done
+
+4. Cipher Text:
+    1. For each alphabet character, what letter does it map to
+    2. Preserve case
+    3. Leave non-alphabetic characters as it is
+
+5. Print Cipher Text
+
+
+
+Logic:
+
+1. Check for 2 arguments with if loop
+2. Link valid_key_chekck function (make it later) for argv 1
+3. if loop for checking 26 characters
+4. get string plaintext
+5. check length of string
+6. printing any non alphabet characters as it is ( < A and > Z || same for small letters for loop(if (plaintext[]
+ else
+
+
+ Valid_key_Check function:
+
+ input length = strlen(A)
+
+ if loop ! 26 characters = return 1
+
+ else scans for non alphabetical characters return 1
+ scan for characters already been used
+ scan for characters already been used lower case
+
+
